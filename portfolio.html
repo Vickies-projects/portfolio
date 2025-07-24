@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Landing Page</title>
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="logo-placeholder.png" type="image/png">
+</head>
+<body>
+    <header>
+    <img class="logo" src="logo-placeholder.png" alt="Logo">
+    <h1>Hi, I am Victor Waweru</h1>
+    <p>A Front‑End Developer specializing in HTML,CSS and JavaScript</p>
+  </header>
+
+  <section id="about">
+    <img class="me" src="developer.jpg" alt="Vickie Photo">
+    <div>
+      <h1>About Me</h1>
+      <p>I am Victor, a passionate Front‑End Developer with 2 years of experience creating engaging, user‑centric web applications. I build pixel‑perfect responsive interfaces using HTML, CSS, JavaScript, and React—always with a focus on performance and accessibility. I also enjoy collaborating with designers and stakeholders to bring ideas to life and craft seamless digital experiences. When I'm not coding, you'll find me sketching UI concepts or exploring the latest design trends.</p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div id="skills-list">
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">UI/UX</div>
+      <div class="skill-item">Figma</div>
+    </div>
+    <h2>Contact Me</h2>
+    <div id="social-links">
+    <div class="contact-me"><a href="https://wa.me/254769864327?text=Hello%2C%20I%20am%20reaching%20to%20know%20more%20about%20your%20services"><i class="bxl bx-whatsapp"></i><span class="sr-only">WhatsApp</span></a></div>
+    <div class="contact-me"><a href="https://www.facebook.com/victor.waweru.70831"><i class='bxl  bx-facebook'></i><span class="sr-only">Facebook</span></a></div>
+    <div class="contact-me"><a href="https://www.fiverr.com/s/0bG049r"><i class='bxl  bx-fiverr'></i><span class="sr-only">Facebook</span></a></div>
+    <div class="contact-me"><a href="https://x.com/victorwawe4441?t=5RV8kuQ7UpQRe22TWjOdIQ&s=08"><i class='bxl  bx-twitter-x'></i><span class="sr-only">Facebook</span></a></div>
+    <div class="contact-me"><a href="https://www.instagram.com/v.wawz?igsh=OXd0ODI1Ymp4ZHJn"><i class='bxl  bx-instagram-alt'></i><span class="sr-only">Instagram</span></a></div>
+    <div class="contact-me"><a href="https://t.me/+254711813677"><i class='bxl  bx-telegram'></i> <span class="sr-only">Telegram</span></a></div>
+    </div>
+  </section>
+
+  <section class="project-carousel">
+    <div class="carousel-container">
+      <div class="square">
+        <div class="image-wrapper">
+          <!-- Single image per project, all hidden except active -->
+          <div class="project-image active"><img src="portfolio-website.jpeg" alt="Portfolio Website"></div>
+          <div class="project-image"><img src="landing-page.jpeg" alt="Landing Page"></div>
+          <div class="project-image"><img src="login.jpeg" alt="Login Page"></div>
+          <div class="project-image"><img src="product-detail.jpeg" alt="Product Detail"></div>
+          <div class="project-image"><img src="blog.jpeg" alt="Blog"></div>
+          <div class="project-image"><img src="contact.jpeg" alt="Contact"></div>
+          <div class="project-image"><img src="pricing.jpeg" alt="Pricing"></div>
+          <div class="project-image"><img src="faq.png" alt="FAQ"></div>
+          <div class="project-image"><img src="error.png" alt="Error"></div>
+        </div>
+      </div>
+      <div class="project-info">
+        <h2 class="title">Portfolio Website</h2>
+        <p class="description">A fully responsive, modern portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and vanilla JavaScript, the site features a sleek hero section, animated transitions, and a project carousel. Designed with accessibility and mobile-first principles in mind.</p>
+       <div class="carousel-buttons">
+        <button class="prev" aria-label="Previous Project">←</button>
+        <button class="next" aria-label="Next Project">→</button>
+      </div>
+    </div>
+   </div>
+  </section>
+
+    <button class="cta-button" onclick="window.location.href='https://www.fiverr.com/s/0bG049r'">Get in Touch</button>
+    <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+    <form action="https://formsubmit.co/vwaweru008@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New message from your portfolio site!">
+    <input type="hidden" name="_template" value="table">
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  </section>
+
+  <footer>
+    <p>© 2025 Victor Developer. All rights reserved.</p>
+    <p>
+      <a href="#social-links">Contact</a> |
+      <a href="#skills-list">Skills</a> |
+      <a href="#about">About</a>
+    </p>
+  </footer>
+
+  <script>
+    const projects = [
+      { title: "Portfolio Website", description: "A fully responsive, modern portfolio website showcasing my skills, projects, and contact information. Built with HTML, CSS, and vanilla JavaScript, the site features a sleek hero section, animated transitions, and a project carousel. Designed with accessibility and mobile-first principles in mind.", image: "portfolio-website.jpeg" },
+      { title: "Landing Page", description: "A sleek and responsive landing page for a SaaS startup. Features a hero section with a call-to-action, feature highlights, testimonials, and pricing cards. Built with HTML, CSS Grid, and JavaScript scroll animations (AOS.js).", image: "landing-page.jpeg" },
+      { title: "Login / Signup Page", description: "A modern authentication page with email/password login and social auth options. Includes form validation, error handling, and toggle between login and signup views. Designed with mobile-first principles and animated input labels.", image: "login.jpeg" },
+      { title: "Product Detail Page", description: "A detailed product view with image carousel, price options, quantity selector, and add-to-cart button. Includes collapsible tabs for specifications and reviews. Optimized for conversion and styled with CSS.", image: "product-detail.jpeg" },
+      { title: "Blog Post Page", description: "A clean, readable blog post template with a sticky table of contents, estimated reading time, social share buttons, and markdown styling. Responsive typography and code block highlighting included.", image: "blog.jpeg" },
+      { title: "Contact Page", description: "A responsive contact page with a styled form, contact details, embedded Google Map, and subtle form animations. Form includes input validation and a success message confirmation without page reload.", image: "contact.jpeg" },
+      { title: "Pricing Page", description: "A multi-tier pricing page with feature comparison, toggle for monthly/yearly billing, and animated card transitions. Focused on clarity and conversion with visual hierarchy and call-to-action buttons.", image: "pricing.jpeg" },
+      { title: "FAQ Page", description: "A frequently asked questions page with expandable accordion items, grouped categories, and a floating support button. Designed for readability and accessibility using semantic HTML5 elements.", image: "faq.png" },
+      { title: "404 Error Page", description: "A custom 404 error page with a playful graphic, search bar, and redirect link to homepage. Includes smooth fade-in animation and responsive SVG illustration for a better user experience.", image: "error.png" }
+    ];
+
+    const images = document.querySelectorAll(".project-image");
+    const titleEl = document.querySelector(".title");
+    const descEl = document.querySelector(".description");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+
+    let currentIndex = 0;
+
+    function updateProject(index) {
+      images.forEach(img => img.classList.remove("active"));
+      const cur = index % projects.length;
+      images[cur].classList.add("active");
+
+      titleEl.textContent = projects[cur].title;
+      descEl.textContent = projects[cur].description;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      currentIndex--;
+      if(currentIndex < 0) currentIndex = projects.length - 1;
+      updateProject(currentIndex);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      currentIndex++;
+      updateProject(currentIndex);
+    });
+  </script>
+
+</body>
+</html>
